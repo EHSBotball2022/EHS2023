@@ -1,5 +1,5 @@
 #include <kipr/wombat.h>
-​
+
 int main()
 {
     enable_servos();
@@ -8,7 +8,7 @@ int main()
         set_servo_position(0,1500);
         msleep(500);
         set_servo_position(1,500);
-        msleep(500);
+    	msleep(500);
     }
     else
     {
@@ -21,4 +21,3 @@ int main()
     printf("done w/ reset\n");
     return 0;
 }
-​
