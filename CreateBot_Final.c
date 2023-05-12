@@ -102,6 +102,7 @@ void toAnalysisLab(void)
 
 int main(void)
 {
+    // Initiation
     wait_for_light(0);
     initiation();
     timing_thread();
@@ -111,16 +112,12 @@ int main(void)
     turn(50,'r');
     move(720,'f');
     turn(80,'l');
-    
     create_drive_direct(0,0);
-	retrievePayload();
+	
+    // Retrieve from center pillar
+    retrievePayload();
     toAnalysisLab();
-    
-    // To pillar to the right of center
-    move(150,'f');
-    turn(10,'l');
-    
-    //retrievePayload();
+ 
     disconnection();
     return 0;
 }
