@@ -26,11 +26,11 @@ void turn(const int angle, const char direc)
 
 void set_arm(const int v[2])
 {
-   	int i;
+    int i;
     const int div = 25, initial_position = get_servo_position(0);
     if(abs(*v-initial_position) < 30)
         set_servo_position(0, *v);
-   	else
+    else
     {
         for(i=1; i<=div; i++) 
         {
